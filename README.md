@@ -1,2 +1,3 @@
-# DeMONWiki
-Internal wiki within DeMON Lab members
+# DeMON Lab Wiki
+---
+Internal wiki within DeMON Lab members. 
