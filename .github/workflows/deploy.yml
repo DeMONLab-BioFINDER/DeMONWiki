@@ -1,0 +1,36 @@
+name: Build and Deploy GitBook
+
+on:
+  push:
+    branches:
+      - main  # Trigger the action when a push is made to main branch.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Updated to v3
+        with:
+          node-version: '12.16'  # Use Node.js 12.16
+      
+      - name: Update graceful-fs
+        run: npm install graceful-fs@latest  # Manually update graceful-fs to the latest version
+      
+      - name: Install GitBook CLI
+        run: npm install -g gitbook-cli
+
+      - name: Install GitBook plugins and build
+        run: |
+          gitbook install
+          gitbook build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./_book
