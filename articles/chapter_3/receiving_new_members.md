@@ -17,3 +17,9 @@ This information is for welcoming new members to the team.
     - Get request form from https://www.intramed.lu.se/en/support-and-tools/access-cards-and-parking
         - Needs to be signed
     - Send it in to BMC reception before the new member arrives
+
+- Ask for a short blurb and photo for the lab website
+
+- Introduce the lab documentation
+
+- Be available to answer questions
