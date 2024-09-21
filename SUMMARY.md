@@ -16,4 +16,4 @@
 * [4. Conference/Travel](articles/Ch4_ConferenceTravel.md)
 * [5. Purchasing](articles/Ch5_Purchasing.md)
 * [6. Servers](articles/Ch6_Servers.md)
-* [Contribute & Feedback](articles/CONTRIBUTE.md)
+* [Contribute](articles/Contribute.md)
