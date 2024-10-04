@@ -34,7 +34,6 @@ jobs:
             "plugins": [
               "highlight",
               "search",
-              "anchors",
               "hints", 
               "tabs2"
             ]
