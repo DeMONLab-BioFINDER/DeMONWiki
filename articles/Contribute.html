@@ -100,12 +100,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="chapter_1/Ch1_GitWiki.html">
+        <li class="chapter " data-level="1.2" data-path="chapter_1/Ch1_Git.html">
             
-                <a href="chapter_1/Ch1_GitWiki.html">
+                <a href="chapter_1/Ch1_Git.html">
             
                     
-                    1. GitWiki
+                    1. Git
             
                 </a>
             
@@ -114,12 +114,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="chapter_1/Sec_1-1.md">
+        <li class="chapter " data-level="1.2.1" data-path="chapter_1/Ch1.1_GitWiki.html">
             
-                <span>
+                <a href="chapter_1/Ch1.1_GitWiki.html">
             
                     
-                    1.1 GeneralOrganization
+                    1.1 GitWiki
             
                 </a>
             
@@ -127,113 +127,16 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="chapter_1/Sec_1-2.md">
+        <li class="chapter " data-level="1.2.2" data-path="chapter_1/Ch1.2_LabGitGuidelines.html">
             
-                <span>
+                <a href="chapter_1/Ch1.2_LabGitGuidelines.html">
             
                     
-                    1.2 Reproducibility
+                    1.2 LabGitWorkFlow
             
                 </a>
             
 
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="chapter_1/Sec_1-3.md">
-            
-                <span>
-            
-                    
-                    1.3 ProjectManagement
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.4" data-path="chapter_1/Sec_1-4.md">
-            
-                <span>
-            
-                    
-                    1.4 Documentation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.5" data-path="chapter_1/Sec_1-5.md">
-            
-                <span>
-            
-                    
-                    1.5 CodingGuidelines
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.6" data-path="chapter_1/Sec_1-6.md">
-            
-                <span>
-            
-                    
-                    1.6 DeMONUtilities
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.6.1" data-path="chapter_1/Sec_1-6-1.md">
-            
-                <span>
-            
-                    
-                    1.6.1 Stats
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.6.2" data-path="chapter_1/Sec_1-6-2.md">
-            
-                <span>
-            
-                    
-                    1.6.2 fMRI
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.6.3" data-path="chapter_1/Sec_1-6-3.md">
-            
-                <span>
-            
-                    
-                    1.6.3 Omics
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -397,24 +300,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="how-to-contribute-to-demon-wiki">How to contribute to DeMON wiki?</h2>
+                                <h1 id="how-to-contribute-to-demon-lab-wiki">How to contribute to DeMON Lab wiki</h1>
 <hr>
-<h3 id="1-join-demonbiofinder-github-organization">1. Join DeMON+BioFINDER Github organization</h3>
+<p>This documentation shows how to contribute to DeMON Lab wiki.</p>
+<h2 id="1-get-access-to-demonlabwiki-repo">1. Get access to DeMONLabWiki repo</h2>
 <hr>
-<h3 id="2-get-access-to-demonlabwiki-repo">2. Get access to DeMONLabWiki repo</h3>
+<p>DeMonWiki is a public repo, you should visit it by clicking its <a href="https://github.com/DeMONLab-BioFINDER/DeMONWiki" target="_blank">link</a>.</p>
+<h2 id="2-contribute-contents">2. Contribute contents</h2>
 <hr>
-<h3 id="3-create-a-new-branch">3. Create a new branch</h3>
+<p>The way contributing to DeMONWiki follows general git workflow. If you are not familiar with git workflow, you are highly recommended to check <a href="https://demonlab-biofinder.github.io/DeMONWiki/articles/chapter_1/Ch1.1_GitWiki.html" target="_blank">Chapter 1.1</a> for more details. You should edit contents on a new branch, add your changes and commit your changes.</p>
+<h3 id="clone-repo-locally">Clone repo locally</h3>
 <hr>
-<h3 id="4-edit-contents">4. Edit contents</h3>
+<p>You could clone DeMONWiki repo to your local machine using <code>git clone git@github.com:DeMONLab-BioFINDER/DeMONWiki.git</code> showing as follows. If you are working on a Windows machine, you might need to install git bash following <a href="https://demonlab-biofinder.github.io/DeMONWiki/articles/chapter_1/Ch1.1_GitWiki.html" target="_blank">Chapter 1.1</a>.</p>
+<p>Once you have cloned DeMONWiki on your local machine, you could run <code>cd DeMONWiki</code> to enter DeMONWiki directory.</p>
+<h3 id="create-a-new-branch">Create a new branch</h3>
 <hr>
-<h3 id="5-submit-pull-request-pr">5. Submit Pull Request (PR)</h3>
+<p>For easy tracking, you are required to edit on other branches instead of on <code>main</code> branch. You could run <code>git branch</code> to check how many branches are available.</p>
+<p>If you want to create a new branch, you could run <code>git checkout -b &lt;NewBranchName&gt;</code>.</p>
+<h3 id="edit">Edit</h3>
 <hr>
-<h3 id="6-review--merge-your-pr">6. Review &amp; merge your PR</h3>
+<p>The DeMONWiki is powered by the Gitbook service, which means all documents are in form of MarkDown format. If you are not familiar with MarkDown format, you could refer <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank">here</a> for MarkDown usage.</p>
+<p>A Preview mode will be very helpful for editing MarkDown files, there are many tools, for example, VS Code.</p>
+<h3 id="add--commit">Add &amp; commit</h3>
 <hr>
-<h3 id="7-update-your-own-branch">7. Update your own branch</h3>
+<p>Once you have edited the contents locally, you are ready to submit all your changes.</p>
+<p>You could check the status of current branch by <code>git status</code> command.</p>
+<p>If you are satisfied with all your changes, you will need to run <code>git add .</code> command to add these changes, then run <code>git commit -m &lt;Your Short Commit Summary&gt;</code> to commit changes.</p>
+<h2 id="3-submit-pull-request-pr">3. Submit Pull Request (PR)</h2>
 <hr>
-<h2 id="bugs-and-questions">Bugs and questions</h2>
+<p>If you have added and committed all your changes, you are ready to push your commits to the remote repo by running <code>git push origin &lt;NewBranchName&gt;</code>.</p>
+<p>If succeed, you will see the updated <code>&lt;NewBranchName&gt;</code> branch on GitHub page (remote repo).</p>
+<p>To make the changed you made merge into <code>main</code> branch, a PR is expected. You could got to <code>Pull Request</code> tab and click submit a new PR. You will need to ask DeMON labmates to review your PR.</p>
+<h2 id="4-review--merge-your-pr">4. Review &amp; merge your PR</h2>
 <hr>
+<p>The purpose of PR is multi-fold. The main reason is that to protect changes from untrusted parties given DeMONWiki is a public repo. Only authorized DeMON labmates could merge a PR. Another reason is to improve the quality of DeMONWiki.</p>
+<h3 id="pr-review">PR review</h3>
+<hr>
+<p>As a reviewer, you should keep in mind that the DeMONWiki should be detailed for new DeMON members as much as possible. For example, are the instructions intuitive for new DeMON members with diverse backgrounds? If text is not informative, should figures be provided? Are there any</p>
+<p>When you review the PR, you could help improve the quality by finding typos, bugs, grammar mistakes etc.</p>
+<p>Once all comments from reviewers have been solved, the PR could be merged into <code>main</code> branch.</p>
+<h1 id="bugs-and-questions">Bugs and questions</h1>
+<hr>
+<p>If you have any questions or find any bugs for this page, you could check with Lijun (anlijuncn@gmail.com)</p>
 
                                 
                                 </section>
@@ -454,7 +381,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Contribute","level":"1.8","depth":1,"previous":{"title":"6. Servers","level":"1.7","depth":1,"path":"articles/Ch6_Servers.md","ref":"articles/Ch6_Servers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/Contribute.md","mtime":"2024-09-23T11:18:49.094Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-09-23T11:19:21.715Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Contribute","level":"1.8","depth":1,"previous":{"title":"6. Servers","level":"1.7","depth":1,"path":"articles/Ch6_Servers.md","ref":"articles/Ch6_Servers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/Contribute.md","mtime":"2024-10-04T20:33:52.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-04T20:34:25.281Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
