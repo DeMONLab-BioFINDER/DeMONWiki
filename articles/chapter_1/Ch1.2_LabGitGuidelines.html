@@ -25,6 +25,18 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tabs2/tabs.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -324,10 +336,8 @@
 <li><code>data</code> directory for all your data (pre)processing, split, QC procedures;</li>
 <li><code>example</code> or <code>tutorial</code> directory for users to easily run your analyses using fake/public data.</li>
 </ul>
-<blockquote>
-<p><strong>!CAUTION</strong>
-In our lab, most data we used are restricted access. <strong>NEVER PUT YOUR DATA ON CLOUD STORAGE (Github, Dropbox, Google Drive,...)</strong>. It will cause serious problems!</p>
-</blockquote>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>In our lab, most data we used are restricted access. <strong>NEVER PUT YOUR DATA ON CLOUD STORAGE (Github, Dropbox, Google Drive,...)</strong>. It will cause serious problems!</p>
+</div></div></p>
 <h3 id="private-mode">Private mode</h3>
 <p>You could easily control the visibility level (public/lab-wise/yourself) of your codes by setting access constrain of your project repo.</p>
 <h2 id="reproducibility">Reproducibility</h2>
@@ -429,7 +439,7 @@ Please stay tuned.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2 LabGitWorkFlow","level":"1.2.2","depth":2,"next":{"title":"2. LabTenets","level":"1.3","depth":1,"path":"articles/Ch2_LabTenets.md","ref":"articles/Ch2_LabTenets.md","articles":[]},"previous":{"title":"1.1 GitWiki","level":"1.2.1","depth":2,"path":"articles/chapter_1/Ch1.1_GitWiki.md","ref":"articles/chapter_1/Ch1.1_GitWiki.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_1/Ch1.2_LabGitGuidelines.md","mtime":"2024-10-04T20:45:58.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-04T20:46:30.443Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.2 LabGitWorkFlow","level":"1.2.2","depth":2,"next":{"title":"2. LabTenets","level":"1.3","depth":1,"path":"articles/Ch2_LabTenets.md","ref":"articles/Ch2_LabTenets.md","articles":[]},"previous":{"title":"1.1 GitWiki","level":"1.2.1","depth":2,"path":"articles/chapter_1/Ch1.1_GitWiki.md","ref":"articles/chapter_1/Ch1.1_GitWiki.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search","hints","tabs2"],"pluginsConfig":{"highlight":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"tabs2":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_1/Ch1.2_LabGitGuidelines.md","mtime":"2024-10-04T21:06:24.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-04T21:07:13.271Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -444,6 +454,14 @@ Please stay tuned.</p>
     
         
         <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tabs2/tabs.js"></script>
         
     
         
