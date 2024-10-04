@@ -44,8 +44,9 @@ In DeMONLab, we used Github as remote repo, you could visit [Github](github.com/
 
 Most Linux and Macos machines are installed with git. If you are using Windows (unfortunately), you could download and install git from [here](https://gitforwindows.org/).
 
-> **!NOTE**
-> Always recommended to use latest stable version of softwares, for new features and safety reasons.
+{% hint style="warning" %}
+Always recommended to use latest stable version of softwares, for new features and safety reasons.
+{% endhint %}
 
 ##### Configuration
 
@@ -61,8 +62,9 @@ $ git config --global user.email ad1901@brain.com
 
 ---
 
-> **!TODO**
-> Please stay tuned.
+{% hint style="info" %}
+Please stay tuned.
+{% endhint %}
 
 ## Git Commands
 
@@ -383,10 +385,11 @@ $ git log --grep "term" --author "name"
 
 #### Undoing Things
 
-> **! WARNING**
-> At any stage, you may want to undo something. Here, we’ll review a few basic tools for undoing
-> changes that you’ve made. Be careful, because you can’t always undo some of these undos. This is
-> one of the few areas in Git where you may lose some work if you do it wrong.
+{% hint style="warning" %}
+At any stage, you may want to undo something. Here, we’ll review a few basic tools for undoing
+changes that you’ve made. Be careful, because you can’t always undo some of these undos. This is
+one of the few areas in Git where you may lose some work if you do it wrong.
+{% endhint %}
 
 #### Amending commit
 
@@ -407,11 +410,11 @@ $ git add forgotten_file
 $ git commit --amend
 ```
 
-> **! CAUTION**
-> Only amend commits that are still local and have not been pushed somewhere.
-> Amending previously pushed commits and force pushing the branch will cause
-> problems for your collaborators. For more on what happens when you do this and
-> how to recover if you’re on the receiving end read [The Perils of Rebasing]().
+{% hint style="warning" %}
+Only amend commits that are still local and have not been pushed somewhere.
+Amending previously pushed commits and force pushing the branch will cause
+problems for your collaborators.
+{% endhint %}
 
 ##### Unstaging a staged file
 
@@ -450,10 +453,11 @@ $ git status
 The command is a bit strange, but it works. The CONTRIBUTING.md file is modified but once again
 unstaged.
 
-> **!CAUTION**
-> It’s true that git reset can be a dangerous command, especially if you provide the
-> --hard flag. However, in the scenario described above, the file in your working
-> directory is not touched, so it’s relatively safe.
+{% hint style="warning" %}
+It’s true that git reset can be a dangerous command, especially if you provide the
+`--hard` flag. However, in the scenario described above, the file in your working
+directory is not touched, so it’s relatively safe
+{% endhint %}
 
 Some options for `git reset` commands:
 
@@ -505,17 +509,19 @@ $ git status
 
 You can see that the changes have been reverted.
 
-> **!CAUTION**
-> It’s important to understand that git checkout -- <file> is a dangerous command.
-> Any local changes you made to that file are gone — Git just replaced that file with
-> the last staged or committed version. Don’t ever use this command unless you
-> absolutely know that you don’t want those unsaved local changes.
+{% hint style="warning" %}
+It’s important to understand that `git checkout -- <file>` is a dangerous command.
+Any local changes you made to that file are gone — Git just replaced that file with
+the last staged or committed version. Don’t ever use this command unless you
+absolutely know that you don’t want those unsaved local changes.
+{% endhint %}
 
-> **!NOTE**
-> Remember, anything that is committed in Git can almost always be recovered. Even commits that
-> were on branches that were deleted or commits that were overwritten with an --amend commit can
-> be recovered. However, anything you lose that was never
-> committed is likely never to be seen again.
+{% hint style="info" %}
+Remember, anything that is committed in Git can almost always be recovered. Even commits that
+were on branches that were deleted or commits that were overwritten with an --amend commit can
+be recovered. However, anything you lose that was never
+committed is likely never to be seen again.
+{% endhint %}
 
 If you would like to keep the changes you’ve made to that file but still need to get it out of the way
 for now, there is a better command `git stash`:
