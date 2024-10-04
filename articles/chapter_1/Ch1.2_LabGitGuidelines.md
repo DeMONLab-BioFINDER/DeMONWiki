@@ -96,8 +96,9 @@ You are highly recommended to think about following points during your coding/re
 
 ---
 
-> **!TODO**
-> Please stay tuned.
+{% hint style="info" %}
+Please stay tuned.
+{% endhint %}
 
 # Bugs and questions
 
