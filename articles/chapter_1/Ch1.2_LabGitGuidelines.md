@@ -28,7 +28,7 @@ In general, your repo should cover:
 - `data` directory for all your data (pre)processing, split, QC procedures;
 - `example` or `tutorial` directory for users to easily run your analyses using fake/public data.
 
-> [!CAUTION]
+> **!CAUTION**
 > In our lab, most data we used are restricted access. **NEVER PUT YOUR DATA ON CLOUD STORAGE (Github, Dropbox, Google Drive,...)**. It will cause serious problems!
 
 ### Private mode
@@ -95,7 +95,8 @@ You are highly recommended to think about following points during your coding/re
 
 ---
 
-> [!TODO]
+> **!TODO**
+> Please stay tuned.
 
 # Bugs and questions
 

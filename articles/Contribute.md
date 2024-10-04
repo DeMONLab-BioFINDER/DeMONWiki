@@ -20,7 +20,7 @@ The way contributing to DeMONWiki follows general git workflow. If you are not f
 
 ---
 
-You could clone DeMONWiki repo to your local machine using `git clone git@github.com:DeMONLab-BioFINDER/DeMONWiki.git` showing as follows. If you are working on a Windows machine, you might need to install git bash following [Chapter 1.1](https://demonlab-biofinder.github.io/DeMONWiki/articles/chapter_1/Ch1.1_GitWiki.html).
+You could clone DeMONWiki repo to your local machine using `git clone git@github.com:DeMONLab-BioFINDER/DeMONWiki.git`. If you are working on a Windows machine, you might need to install git bash following [Chapter 1.1](https://demonlab-biofinder.github.io/DeMONWiki/articles/chapter_1/Ch1.1_GitWiki.html).
 
 Once you have cloned DeMONWiki on your local machine, you could run `cd DeMONWiki` to enter DeMONWiki directory.
 
