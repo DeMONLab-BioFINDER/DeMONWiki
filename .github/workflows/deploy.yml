@@ -24,10 +24,27 @@ jobs:
       - name: Install GitBook CLI
         run: npm install -g gitbook-cli
 
-      - name: Install GitBook plugins and build
+      - name: Install GitBook dependencies
+        run: gitbook install
+  
+      - name: Install GitBook Plugins
         run: |
+          # Define a JSON file (book.json) to specify your GitBook plugins
+          echo '{
+            "plugins": [
+              "highlight",
+              "search",
+              "anchors",
+              "hints", 
+              "tabs2"
+            ]
+          }' > book.json
+  
+          # Install the plugins listed in book.json
           gitbook install
-          gitbook build
+  
+      - name: Build GitBook
+        run: gitbook build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
