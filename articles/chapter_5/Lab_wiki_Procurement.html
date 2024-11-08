@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2 LabGitWorkFlow · GitBook</title>
+        <title>5. Purchasing · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Ch2_LabTenets.md" />
+    <link rel="next" href="../Ch6_Servers.md" />
     
     
-    <link rel="prev" href="Ch1.1_GitWiki.html" />
+    <link rel="prev" href="../chapter_4/Lab_reimbursement.html" />
     
 
     </head>
@@ -114,9 +114,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="Ch1_Git.html">
+        <li class="chapter " data-level="1.2" data-path="../chapter_1/Ch1_Git.html">
             
-                <a href="Ch1_Git.html">
+                <a href="../chapter_1/Ch1_Git.html">
             
                     
                     1. Git
@@ -128,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="Ch1.1_GitWiki.html">
+        <li class="chapter " data-level="1.2.1" data-path="../chapter_1/Ch1.1_GitWiki.html">
             
-                <a href="Ch1.1_GitWiki.html">
+                <a href="../chapter_1/Ch1.1_GitWiki.html">
             
                     
                     1.1 GitWiki
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="Ch1.2_LabGitGuidelines.html">
+        <li class="chapter " data-level="1.2.2" data-path="../chapter_1/Ch1.2_LabGitGuidelines.html">
             
-                <a href="Ch1.2_LabGitGuidelines.html">
+                <a href="../chapter_1/Ch1.2_LabGitGuidelines.html">
             
                     
                     1.2 LabGitWorkFlow
@@ -262,9 +262,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../chapter_5/Lab_wiki_Procurement.html">
+        <li class="chapter active" data-level="1.6" data-path="Lab_wiki_Procurement.html">
             
-                <a href="../chapter_5/Lab_wiki_Procurement.html">
+                <a href="Lab_wiki_Procurement.html">
             
                     
                     5. Purchasing
@@ -331,7 +331,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.2 LabGitWorkFlow</a>
+        <a href="../.." >5. Purchasing</a>
     </h1>
 </div>
 
@@ -346,86 +346,65 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="demon-lab-github-guidelines">DeMON lab GitHub Guidelines</h1>
-<hr>
-<h2 id="general-organization">General Organization</h2>
-<hr>
-<h3 id="motivations">Motivations</h3>
-<p>The motivations of maintaining a lab-wise GitHub organization are multifold.</p>
+                                <h1 id="lucat">Lucat</h1>
+<p>You need an entitlement in Lucat in order to be able to login to Lupin (Proceedo). You can request the needed entitlement in Lucat by following these steps:</p>
+<ol>
+<li>Go to lucat.lu.se in your web browser and login. </li>
+<li>Click on My entitlements under My page on the left hand side, and then click on Request an entitlement. </li>
+<li>Select the Type of entitlement as IT service. </li>
+<li><p>Select the following: </p>
 <ul>
-<li>The codes/scripts of every lab&apos;s paper is easy to find/maintain/reproduce;</li>
-<li>The project codes/scripts are version controlled;</li>
-<li>The future labmates could easily follow/reuse codes/scripts;</li>
-<li>...</li>
-</ul>
-<h3 id="project-wise-paper-wise-repo">Project-wise (paper-wise) repo</h3>
-<p>You are recommended to create a project-wise repo for each of your projects. Usually one repo is for one paper, you could discuss with Jake about repo structure if your papers are heavily entangled with each other.</p>
-<h3 id="recommended-repo-structure">Recommended repo structure</h3>
-<p>In general, your repo should cover:</p>
-<ul>
-<li><code>func</code> directory for all your functions/classes;</li>
-<li><code>script</code> directory for all your scripts to call functions/classes in <code>func</code> for analysese;</li>
-<li><code>data</code> directory for all your data (pre)processing, split, QC procedures;</li>
-<li><code>example</code> or <code>tutorial</code> directory for users to easily run your analyses using fake/public data.</li>
-</ul>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>In our lab, most data we used are restricted access. <strong>NEVER PUT YOUR DATA ON CLOUD STORAGE (Github, Dropbox, Google Drive,...)</strong>. It will cause serious problems!</p>
-</div></div></p>
-<h3 id="private-mode">Private mode</h3>
-<p>You could easily control the visibility level (public/lab-wise/yourself) of your codes by setting access constrain of your project repo.</p>
-<h2 id="reproducibility">Reproducibility</h2>
-<hr>
-<p>In DeMON lab, we strongly support open-science. Every paper&apos;s code should be reviewed independently by another co-author (<code>reproducibility person, RP</code>) for reducing errors and checking reproducibility.</p>
-<p>The procedure of <code>reproducibility</code> is conducting by Pull Request.</p>
-<p>Before your paper is almost ready (for example, final revision round), you should begin to cleanup your code for being ready to code review.</p>
-<p>In general, the <code>reproducibility</code> procedure should cover:</p>
-<ul>
-<li>Highly structured code/scripts with clear comments for easy reading;</li>
-<li>Accessible data for <code>RP</code> to run your code;</li>
-<li>Detailed comments/checks by <code>RP</code>;</li>
-<li>Validation of results:<ul>
-<li>Jupyter Notebook</li>
-<li>Querto document</li>
-<li>Output folder/Reference documents</li>
+<li>IT service group: Ekonomi </li>
+<li>IT service: Lupin </li>
+<li>Entitlement: Basanv&#xE4;ndare</li>
 </ul>
 </li>
-</ul>
-<p>For <code>RP</code>, you can give different levels of comments/checks after discussion with Jake, depending on your experience and engagement of project.</p>
-<ul>
-<li>Level1: Successfully running code and pass all results validation checks;</li>
-<li>Level2: Providing coding suggestions;</li>
-<li>Level3: In-depth comments for algorithms/approaches used in this project.</li>
-</ul>
-<h2 id="documentation">Documentation</h2>
-<hr>
-<p>Although perfect code is self-explanatory, academy is never perfect. You are highly recommended to have detailed documentations for your project. A user is more likely to try your paper (leading to high impacts) if your project is easy to run/replicate.</p>
-<p>You should at least have a top-level <code>README.md</code> in your repo with:</p>
-<ul>
-<li>Introduction/Background</li>
-<li>Link of your paper</li>
-<li>Usage</li>
-<li>Contact</li>
-</ul>
-<p>For your functions/classes, highly recommended to have <code>docstring</code> to describe the <code>input</code>, <code>output</code>, <code>expected behavior</code> of your code.</p>
-<h2 id="coding-guidelines">Coding guidelines</h2>
-<hr>
-<p>You are highly recommended to think about following points during your coding/refectory:</p>
-<ul>
-<li>Modularity</li>
-<li>Avoid hard coding</li>
-<li>Follow some language-specific guidelines (e.g., <code>PEP8</code> for Python)</li>
-<li>Clear and readable code (e.g., meaningful variable names)</li>
-<li>Short functions/scripts (e.g., No one could follow a 2000 lines function)</li>
-<li>Comments for important/complex code blocks</li>
-<li>Progress bar for long running</li>
-<li>No data leakage (e.g., printed out rows in Jupyter Notebook)</li>
-</ul>
-<h2 id="utilities">Utilities</h2>
-<hr>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Please stay tuned.</p>
-</div></div></p>
-<h1 id="bugs-and-questions">Bugs and questions</h1>
-<hr>
-<p>If you have any questions or find any bugs for this page, you could talk with Jake.</p>
+<li><p>Wait for the request to be processed. You can see the status of the request by refreshing the website and then clicking the &quot;i&quot; symbol to the right of the request. Once the request is approved and the systems have synchronized, you should be able to login to Lupin.</p>
+</li>
+</ol>
+<h1 id="lupinproceedo">Lupin/Proceedo</h1>
+<p>Lupin home page:
+<img src="figs/purchase_1.png" alt="">
+Each large icon leads to a page with information how to perform each task.</p>
+<p>Purchase (top left) leads you to page where you can look for things to purchase, then just it up and purchase. Can find <em>almost</em> everything, but there are few exceptional cases, which will be mentioned later.</p>
+<h2 id="purchasing">Purchasing</h2>
+<h3 id="1-find-the-goods">1. Find the goods</h3>
+<p>After searching what you need, just add the goods to the cart, and then press continue to check-out (classic online shopping moves).
+<img src="figs/purchase_2.png" alt=""></p>
+<p><img src="figs/purchase_3.png" alt=""></p>
+<h3 id="2-send-the-requisition">2. Send the requisition</h3>
+<ol>
+<li><strong>Set accounting</strong></li>
+</ol>
+<p><img src="figs/purchase_4.png" alt=""></p>
+<p>Aktivitet - grant code (just search Vogel, to find all Jake&apos;s grant codes)</p>
+<ol>
+<li><strong>Finalize requisition</strong></li>
+</ol>
+<p>Delivery address: <strong>VERY IMPORTANT</strong>
+LUNDS UNIVERSITET, BMC GODSMOTTAGNING
+Barav&#xE4;gen 22C
+222 41 LUND
+GLN: 7350032945439</p>
+<h3 id="free-form-requisition">Free-form requisition</h3>
+<p>Sometimes you may need something <em>very specific</em> that you just can&apos;t find in the normal Lupin store. In such a case you may need to find the item online and then request it to be purchased via freetext form.</p>
+<h4 id="case">Case:</h4>
+<p>Purchasing Data storage server, found a specific one we liked on Dustin webstore, but not in the Lupin system.</p>
+<p>Looked up dustin fritext in the purchasing page
+<img src="figs/purchase_5.png" alt=""></p>
+<p>Choose the most fitting fritext option
+<img src="figs/purchase_6.png" alt="">
+Fill out the form with things such as the item name, catalog number, description, price etc.
+And send in as a requisition.</p>
+<h2 id="invoices">Invoices</h2>
+<p>Besides purchasing goods in Lupin/Proceedo site you may also get invoices to check and aprove that you can find in Invoices section.
+<img src="figs/purchase_8.png" alt=""></p>
+<p>In there once you get the invoice (for example for travel booking hotel, flights etc.) you will need to enter the activity code and accept the invoice.</p>
+<h1 id="med-it-purchasing">MED IT purchasing</h1>
+<p>Some of the more common things can be purchased much faster and without having to go through a Lupin/Proceedo hassle just via MED IT support page (<a href="https://it.med.lu.se" target="_blank">link</a>)</p>
+<p><img src="figs/purchase_7.png" alt=""></p>
+<p>Cost Center : 314821 Neurodegenerativ - Vogel</p>
+<p>Activity: Grant code, ask Jake which to use</p>
 
                                 
                                 </section>
@@ -453,12 +432,12 @@
 
             
                 
-                <a href="Ch1.1_GitWiki.html" class="navigation navigation-prev " aria-label="Previous page: 1.1 GitWiki">
+                <a href="../chapter_4/Lab_reimbursement.html" class="navigation navigation-prev " aria-label="Previous page: 4.2 Apply for reimbursements">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Ch2_LabTenets.md" class="navigation navigation-next " aria-label="Next page: 2. LabTenets">
+                <a href="../Ch6_Servers.md" class="navigation navigation-next " aria-label="Next page: 6. Servers">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -469,7 +448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2 LabGitWorkFlow","level":"1.2.2","depth":2,"next":{"title":"2. LabTenets","level":"1.3","depth":1,"path":"articles/Ch2_LabTenets.md","ref":"articles/Ch2_LabTenets.md","articles":[]},"previous":{"title":"1.1 GitWiki","level":"1.2.1","depth":2,"path":"articles/chapter_1/Ch1.1_GitWiki.md","ref":"articles/chapter_1/Ch1.1_GitWiki.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search","hints","tabs2"],"pluginsConfig":{"highlight":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"tabs2":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_1/Ch1.2_LabGitGuidelines.md","mtime":"2024-11-08T13:08:26.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-08T13:09:13.899Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"tags":["lab_maintenance"],"created":["2024-Oct-25 09:38"],"aliases":["Git Wiki"],"title":"5. Purchasing","level":"1.6","depth":1,"next":{"title":"6. Servers","level":"1.7","depth":1,"path":"articles/Ch6_Servers.md","ref":"articles/Ch6_Servers.md","articles":[]},"previous":{"title":"4.2 Apply for reimbursements","level":"1.5.2","depth":2,"path":"articles/chapter_4/Lab_reimbursement.md","ref":"articles/chapter_4/Lab_reimbursement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search","hints","tabs2"],"pluginsConfig":{"highlight":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"tabs2":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_5/Lab_wiki_Procurement.md","mtime":"2024-11-08T13:08:26.312Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-08T13:09:13.899Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

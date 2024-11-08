@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2 LabGitWorkFlow · GitBook</title>
+        <title>4.1 Booking travel · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Ch2_LabTenets.md" />
+    <link rel="next" href="Lab_reimbursement.html" />
     
     
-    <link rel="prev" href="Ch1.1_GitWiki.html" />
+    <link rel="prev" href="../Ch4_ConferenceTravel.md" />
     
 
     </head>
@@ -114,9 +114,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="Ch1_Git.html">
+        <li class="chapter " data-level="1.2" data-path="../chapter_1/Ch1_Git.html">
             
-                <a href="Ch1_Git.html">
+                <a href="../chapter_1/Ch1_Git.html">
             
                     
                     1. Git
@@ -128,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="Ch1.1_GitWiki.html">
+        <li class="chapter " data-level="1.2.1" data-path="../chapter_1/Ch1.1_GitWiki.html">
             
-                <a href="Ch1.1_GitWiki.html">
+                <a href="../chapter_1/Ch1.1_GitWiki.html">
             
                     
                     1.1 GitWiki
@@ -141,9 +141,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="Ch1.2_LabGitGuidelines.html">
+        <li class="chapter " data-level="1.2.2" data-path="../chapter_1/Ch1.2_LabGitGuidelines.html">
             
-                <a href="Ch1.2_LabGitGuidelines.html">
+                <a href="../chapter_1/Ch1.2_LabGitGuidelines.html">
             
                     
                     1.2 LabGitWorkFlow
@@ -231,9 +231,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../chapter_4/Lab_wiki_TRAVEL.html">
+        <li class="chapter active" data-level="1.5.1" data-path="Lab_wiki_TRAVEL.html">
             
-                <a href="../chapter_4/Lab_wiki_TRAVEL.html">
+                <a href="Lab_wiki_TRAVEL.html">
             
                     
                     4.1 Booking travel
@@ -244,9 +244,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../chapter_4/Lab_reimbursement.html">
+        <li class="chapter " data-level="1.5.2" data-path="Lab_reimbursement.html">
             
-                <a href="../chapter_4/Lab_reimbursement.html">
+                <a href="Lab_reimbursement.html">
             
                     
                     4.2 Apply for reimbursements
@@ -331,7 +331,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >1.2 LabGitWorkFlow</a>
+        <a href="../.." >4.1 Booking travel</a>
     </h1>
 </div>
 
@@ -346,86 +346,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="demon-lab-github-guidelines">DeMON lab GitHub Guidelines</h1>
-<hr>
-<h2 id="general-organization">General Organization</h2>
-<hr>
-<h3 id="motivations">Motivations</h3>
-<p>The motivations of maintaining a lab-wise GitHub organization are multifold.</p>
-<ul>
-<li>The codes/scripts of every lab&apos;s paper is easy to find/maintain/reproduce;</li>
-<li>The project codes/scripts are version controlled;</li>
-<li>The future labmates could easily follow/reuse codes/scripts;</li>
-<li>...</li>
-</ul>
-<h3 id="project-wise-paper-wise-repo">Project-wise (paper-wise) repo</h3>
-<p>You are recommended to create a project-wise repo for each of your projects. Usually one repo is for one paper, you could discuss with Jake about repo structure if your papers are heavily entangled with each other.</p>
-<h3 id="recommended-repo-structure">Recommended repo structure</h3>
-<p>In general, your repo should cover:</p>
-<ul>
-<li><code>func</code> directory for all your functions/classes;</li>
-<li><code>script</code> directory for all your scripts to call functions/classes in <code>func</code> for analysese;</li>
-<li><code>data</code> directory for all your data (pre)processing, split, QC procedures;</li>
-<li><code>example</code> or <code>tutorial</code> directory for users to easily run your analyses using fake/public data.</li>
-</ul>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>In our lab, most data we used are restricted access. <strong>NEVER PUT YOUR DATA ON CLOUD STORAGE (Github, Dropbox, Google Drive,...)</strong>. It will cause serious problems!</p>
-</div></div></p>
-<h3 id="private-mode">Private mode</h3>
-<p>You could easily control the visibility level (public/lab-wise/yourself) of your codes by setting access constrain of your project repo.</p>
-<h2 id="reproducibility">Reproducibility</h2>
-<hr>
-<p>In DeMON lab, we strongly support open-science. Every paper&apos;s code should be reviewed independently by another co-author (<code>reproducibility person, RP</code>) for reducing errors and checking reproducibility.</p>
-<p>The procedure of <code>reproducibility</code> is conducting by Pull Request.</p>
-<p>Before your paper is almost ready (for example, final revision round), you should begin to cleanup your code for being ready to code review.</p>
-<p>In general, the <code>reproducibility</code> procedure should cover:</p>
-<ul>
-<li>Highly structured code/scripts with clear comments for easy reading;</li>
-<li>Accessible data for <code>RP</code> to run your code;</li>
-<li>Detailed comments/checks by <code>RP</code>;</li>
-<li>Validation of results:<ul>
-<li>Jupyter Notebook</li>
-<li>Querto document</li>
-<li>Output folder/Reference documents</li>
-</ul>
+                                <h1 id="1-lucat">1. Lucat</h1>
+<h3 id="ask-for-permissions-to-book-travels-on-your-account">ask for permissions to book travels on your account</h3>
+<p>You need an entitlement in Lucat in order to be able to be able to book travels for yourself (and others) via BCD travels. You can request the needed entitlement in Lucat by following these steps:</p>
+<ol>
+<li>Go to lucat.lu.se in your web browser and login. </li>
+<li>Click on My entitlements under My page on the left hand side, and then click on Request an entitlement. </li>
+<li>Select the Type of entitlement as IT service. </li>
+<li>Select the following: <ul>
+<li>IT service group (IT-tj&#xE4;nstgrupp): Infrastruktur </li>
+<li>IT service (IT-tj&#xE4;nst): Resebokning </li>
+<li>Entitlement (Beh&#xF6;righet): Resebokare (this will allow you to book trips for others as well)<h1 id="2-cytric-booking-system">2. Cytric booking system</h1>
 </li>
 </ul>
-<p>For <code>RP</code>, you can give different levels of comments/checks after discussion with Jake, depending on your experience and engagement of project.</p>
+</li>
+</ol>
+<p>To get to Cytric system (the one you will use to book trips), just either:</p>
 <ul>
-<li>Level1: Successfully running code and pass all results validation checks;</li>
-<li>Level2: Providing coding suggestions;</li>
-<li>Level3: In-depth comments for algorithms/approaches used in this project.</li>
+<li>Google something like &apos;travel book lund uni&apos;</li>
+<li>-or- go to this staff page: <a href="https://www.staff.lu.se/support-and-tools/business-travel/how-book-trip" target="_blank">link</a></li>
+<li>-or- go directly to the source <a href="https://resebokning.adm.lu.se/" target="_blank">cytric booking system</a></li>
 </ul>
-<h2 id="documentation">Documentation</h2>
-<hr>
-<p>Although perfect code is self-explanatory, academy is never perfect. You are highly recommended to have detailed documentations for your project. A user is more likely to try your paper (leading to high impacts) if your project is easy to run/replicate.</p>
-<p>You should at least have a top-level <code>README.md</code> in your repo with:</p>
+<h3 id="book-the-trip">Book the trip</h3>
+<p>Here you will find your own personal dashboard, showing:</p>
 <ul>
-<li>Introduction/Background</li>
-<li>Link of your paper</li>
-<li>Usage</li>
-<li>Contact</li>
+<li>Your or other&apos;s upcoming trips</li>
+<li>And things you can book</li>
 </ul>
-<p>For your functions/classes, highly recommended to have <code>docstring</code> to describe the <code>input</code>, <code>output</code>, <code>expected behavior</code> of your code.</p>
-<h2 id="coding-guidelines">Coding guidelines</h2>
-<hr>
-<p>You are highly recommended to think about following points during your coding/refectory:</p>
+<p><img src="figs/travel_1.png" alt=""></p>
+<h4 id="if-you-want-to-book-the-trip-for-yourself">If you want to book the trip for yourself...</h4>
+<p>just continue with booking for: your own name and that&apos;s it</p>
+<h4 id="but-if-you-want-to-book-a-trip-for-someone-else">But if you want to book a trip for someone else...</h4>
+<p>press Add travellers button, fill out this form and continue:
+<br>
+<img src="figs/travel_2.png" alt=""></p>
+<h3 id="book-flights">Book flights</h3>
+<p>Quite straightforward, find a flight that suits you best and select it.
+<img src="figs/travel_3.png" alt=""></p>
+<p><strong><em>NOTE:</em></strong> pay attention to:</p>
 <ul>
-<li>Modularity</li>
-<li>Avoid hard coding</li>
-<li>Follow some language-specific guidelines (e.g., <code>PEP8</code> for Python)</li>
-<li>Clear and readable code (e.g., meaningful variable names)</li>
-<li>Short functions/scripts (e.g., No one could follow a 2000 lines function)</li>
-<li>Comments for important/complex code blocks</li>
-<li>Progress bar for long running</li>
-<li>No data leakage (e.g., printed out rows in Jupyter Notebook)</li>
+<li>Are the tickets refundable or not (sometimes they automatically suggest you buy refundable tickets which are significantly more expensive) This often shows up in step 3 &quot;Select Fare&quot;</li>
+<li>Do the tickets include baggage or not (often it does, but if it doesn&apos;t you can always add it on as an extra for a price)</li>
 </ul>
-<h2 id="utilities">Utilities</h2>
-<hr>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>Please stay tuned.</p>
-</div></div></p>
-<h1 id="bugs-and-questions">Bugs and questions</h1>
-<hr>
-<p>If you have any questions or find any bugs for this page, you could talk with Jake.</p>
+<h3 id="book-trains">Book trains</h3>
+<p>Do not recommend for international travel (may be a bit tricky), but is great for travel within Sweden.
+Booking process almost identical to flights booking.</p>
+<h3 id="book-hotels">Book hotels</h3>
+<p>Again, just select where to go and dates, press Search</p>
+<p><img src="figs/travel_4.png" alt=""></p>
+<p>And you will get either a list or a Map view of the hotels, select the most optimal one.
+<img src="figs/travel_5.png" alt=""></p>
+<p>At Step 3 &quot;Select Room&quot; you will be most likely given at least two room options, with completely identical descriptions of what you get, but different prices, usually because of different cancellation policies.</p>
+<p>Then just continue onwards to the booking.</p>
+<h1 id="points-of-contact">Points of contact</h1>
+<p>Email BCD.travel if you have any questions. If there&apos;s any issues with accessing the system and what not, they can usually book the trip for you as well if that&apos;s something that you need.</p>
 
                                 
                                 </section>
@@ -453,12 +427,12 @@
 
             
                 
-                <a href="Ch1.1_GitWiki.html" class="navigation navigation-prev " aria-label="Previous page: 1.1 GitWiki">
+                <a href="../Ch4_ConferenceTravel.md" class="navigation navigation-prev " aria-label="Previous page: 4. Conference/Travel">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Ch2_LabTenets.md" class="navigation navigation-next " aria-label="Next page: 2. LabTenets">
+                <a href="Lab_reimbursement.html" class="navigation navigation-next " aria-label="Next page: 4.2 Apply for reimbursements">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -469,7 +443,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2 LabGitWorkFlow","level":"1.2.2","depth":2,"next":{"title":"2. LabTenets","level":"1.3","depth":1,"path":"articles/Ch2_LabTenets.md","ref":"articles/Ch2_LabTenets.md","articles":[]},"previous":{"title":"1.1 GitWiki","level":"1.2.1","depth":2,"path":"articles/chapter_1/Ch1.1_GitWiki.md","ref":"articles/chapter_1/Ch1.1_GitWiki.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search","hints","tabs2"],"pluginsConfig":{"highlight":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"tabs2":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_1/Ch1.2_LabGitGuidelines.md","mtime":"2024-11-08T13:08:26.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-08T13:09:13.899Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"tags":["lab_maintenance"],"created":["2024-Oct-25 09:31"],"aliases":["Git Wiki"],"title":"4.1 Booking travel","level":"1.5.1","depth":2,"next":{"title":"4.2 Apply for reimbursements","level":"1.5.2","depth":2,"path":"articles/chapter_4/Lab_reimbursement.md","ref":"articles/chapter_4/Lab_reimbursement.md","articles":[]},"previous":{"title":"4. Conference/Travel","level":"1.5","depth":1,"path":"articles/Ch4_ConferenceTravel.md","ref":"articles/Ch4_ConferenceTravel.md","articles":[{"title":"4.1 Booking travel","level":"1.5.1","depth":2,"path":"articles/chapter_4/Lab_wiki_TRAVEL.md","ref":"articles/chapter_4/Lab_wiki_TRAVEL.md","articles":[]},{"title":"4.2 Apply for reimbursements","level":"1.5.2","depth":2,"path":"articles/chapter_4/Lab_reimbursement.md","ref":"articles/chapter_4/Lab_reimbursement.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["highlight","search","hints","tabs2"],"pluginsConfig":{"highlight":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"tabs2":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/chapter_4/Lab_wiki_TRAVEL.md","mtime":"2024-11-08T13:08:26.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-08T13:09:13.899Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
