@@ -11,6 +11,6 @@
   * [4.1 Booking travel](articles/chapter_4/Lab_wiki_TRAVEL.md)
   * [4.2 Apply for reimbursements](articles/chapter_4/Lab_reimbursement.md)
 * [5. Purchasing](articles/chapter_5/Lab_wiki_Procurement.md)
-* [6. Servers](articles/Ch6_office_safecty_and_mgmt.md)
-* [7. Servers](articles/Ch7_Servers.md)
+* [6. Mgmt](articles/Ch6_office_safecty_and_mgmt.md)
+* [7. Servers](articles/chapter_5/Ch7_Servers.md)
 * [Contribute](articles/Contribute.md)
