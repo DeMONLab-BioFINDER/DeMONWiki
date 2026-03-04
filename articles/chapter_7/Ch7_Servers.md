@@ -81,6 +81,7 @@ $ source $CONDA_ENVS_PATH/my_env/bin/activate
 (my_env) $ source my_env/bin/deactivate
 ```
 
+
 ## Berzelius
 
 
