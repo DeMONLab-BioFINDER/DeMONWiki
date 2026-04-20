@@ -3,6 +3,8 @@
 
 *Disclaimer: This is supposed to help lab members get started with git/github or even just set up a repository on the demon github. I do not claim by any means that this file contains everything you can do with git/github. It is a whole universe waiting to be explored. But I am hoping it will give a thorough introduction and a place to get started or look up how to do something when you are lost. If you are stuck or find a mistake, please send me a slack or mail and I can update this file.*
 
+*Old Git Documentation: The lab has previously provided Lab Git [Guidelines](Ch1.2_LabGitGuidelines(older).md) and a [GitWiki](Ch1.1_GitWiki(older).md). Some of the terminology is deprecated due to software updates, but check it out if you have time!*
+
 ## Table of Contents
 
 - [1. Get started with git](#1-get-started-with-git)
