@@ -284,19 +284,19 @@ cat ~/.ssh/id_ed25519.pub
 To let github know that this is your ssh key, you will have to copy the contents of the .pub file to your github settings.
 You open the settings by clicking on your profile picture on the right top corner when on github:
 
-<img width="263" height="534" alt="image" src="https://github.com/user-attachments/assets/7f5d373b-70dc-4412-a4d4-361134f5d0e6" />
+<img width="263" height="534" alt="image" src="Images_README/579317575-7f5d373b-70dc-4412-a4d4-361134f5d0e6.png" />
 
 Then you go to SSH and GPG keys:
 
-<img width="270" height="508" alt="image" src="https://github.com/user-attachments/assets/9392b7bd-36eb-4ba1-a416-65d2ca145045" />
+<img width="270" height="508" alt="image" src="Images_README/579310439-9392b7bd-36eb-4ba1-a416-65d2ca145045.png" />
 
 You can see the ssh keys you have added for your github there (blocked out for obvious reasons) as well as add new ssh keys on the top right (green button):
 
-<img width="649" height="450" alt="image" src="https://github.com/user-attachments/assets/77353074-1b61-4857-9135-cb1bc3cca6bf" />
+<img width="649" height="450" alt="image" src="Images_README/579312691-77353074-1b61-4857-9135-cb1bc3cca6bf.png" />
 
 When you click add a new key, this opens:
 
-<img width="664" height="505" alt="image" src="https://github.com/user-attachments/assets/d7203b57-774b-4c61-bed0-b652967833e3" />
+<img width="664" height="505" alt="image" src="Images_README/579314270-d7203b57-774b-4c61-bed0-b652967833e3.png" />
 
 You can give it a name and then paste the contents of your .pub file into the box below. 
 
@@ -317,15 +317,17 @@ Here you will specify the configurations for your repository, such as giving it 
 
 Here is how this can look like:
 
-<img width="687" height="744" alt="image" src="https://github.com/user-attachments/assets/61f68a82-7b5b-4a57-9062-700e4bfde7c9" />
+Click the new repository button on the demon lab's github page:
+<img width="687" height="744" alt="image" src="Images_README/579322890-61f68a82-7b5b-4a57-9062-700e4bfde7c9.png" />
 
-<img width="752" height="708" alt="image" src="https://github.com/user-attachments/assets/1460ca9a-941f-4122-92ea-e7f51aa2fc15" />
+Add a name and description to your new repository. Do not add any files yet, if you want to connect it to your local repository.
+<img width="752" height="708" alt="image" src="Images_README/579323461-1460ca9a-941f-4122-92ea-e7f51aa2fc15.png" />
 
-<img width="746" height="418" alt="image" src="https://github.com/user-attachments/assets/6dc2775d-b64d-4b60-9f27-10a26e6f1fa1" />
+<img width="746" height="418" alt="image" src="Images_README/579323765-6dc2775d-b64d-4b60-9f27-10a26e6f1fa1.png" />
 
 Once you have set up your repository, it will be empty but have a field in the middle of the screen to copy the ssh address. Like this:
 
-<img width="841" height="494" alt="image" src="https://github.com/user-attachments/assets/7fbe6d19-2218-44b0-98d3-615e6952bfe1" />
+<img width="841" height="494" alt="image" src="Images_README/580776105-7fbe6d19-2218-44b0-98d3-615e6952bfe1.png" />
 
 Copy the ssh address and go back to your terminal.
 You will now add this as a remote repository to your local. If you already have a remote repository connected to your local repository, skip this part and go to [section 5](#5-Two-remote-one-local) directly!
